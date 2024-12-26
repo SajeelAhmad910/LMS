@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "5ef1b020-f936-4512-b9c0-4654b4f4cc6b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39574471"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/authors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"haider Ahmad\",\r\n  \"email\": \"haider123@gmail.com\",\r\n  \"phoneNumber\": \"0323293887\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authors"
+					]
+				},
+				"description": "author is creted successfully by sajeel."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/authors/676d6fc9d9d63ecca3579af5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sajeel Ahmad\",\r\n  \"email\": \"sajeelUpdated@example.com\",\r\n  \"phoneNumber\": \"03232930887\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/authors/676d6fc9d9d63ecca3579af5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authors",
+						"676d6fc9d9d63ecca3579af5"
+					]
+				},
+				"description": "user is updated . Email ka issue aya tha then I have updated email and it is solved."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/authors",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"haider Ahmad\",\r\n  \"email\": \"haider123@gmail.com\",\r\n  \"phoneNumber\": \"0323293887\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/authors/676d6fc9d9d63ecca3579af5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authors",
+						"676d6fc9d9d63ecca3579af5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/authors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Introduction to Algorithms\",\r\n  \"author\": \"676d6fc9d9d63ecca3579af5\", // Replace with a valid Author ID from your database\r\n  \"isbn\": \"9780262033848\",\r\n  \"availableCopies\": 5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/authors",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Introduction to Algorithms\",\r\n  \"author\": \"676d6fc9d9d63ecca3579af5\", // Replace with a valid Author ID from your database\r\n  \"isbn\": \"9780262033848\",\r\n  \"availableCopies\": 5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/books/676d72b8d9d63ecca3579b01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books",
+						"676d72b8d9d63ecca3579b01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/authors",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Introduction to Algorithms\",\r\n  \"author\": \"676d6fc9d9d63ecca3579af5\", // Replace with a valid Author ID from your database\r\n  \"isbn\": \"9780262033848\",\r\n  \"availableCopies\": 5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/books/676d72b8d9d63ecca3579b01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books",
+						"676d72b8d9d63ecca3579b01"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
